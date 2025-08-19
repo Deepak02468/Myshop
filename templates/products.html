@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Our Products</h1>
+
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-lg border-0">
+                    <img src="{{ url_for('static', filename='images/product1.jpg') }}" class="card-img-top" alt="Product 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Best quality product.</p>
+                        <h6 class="text-success">₹500</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-lg border-0">
+                    <img src="{{ url_for('static', filename='images/product2.jpg') }}" class="card-img-top" alt="Product 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">High demand product.</p>
+                        <h6 class="text-success">₹800</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
